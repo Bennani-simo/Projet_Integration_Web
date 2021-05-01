@@ -1,52 +1,82 @@
 :host{
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
 
-  .divider{
-    height: 60px;
-    border-left: 2px solid #F3D145;
-    display: inline-block;
-
-  }
-
-  #company-name{
-    color: #375238;
-    font: normal normal bold 20px/20px acumin-pro;
-    transform: rotate(180deg);
-    writing-mode: vertical-rl;
-    display: inline-table;
-    span{
-      &:first-child{
-        color: #375238;
-      }
-      &:last-child{
-        color: #F1D145;
-      }
-    }
-  }
-
-  #hamburgerContainer{
+  #navbar {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    width:50PX ;
-    height: 50px;
-    img {
-      width: 45px;
-      height: 45px;
-      transition: height 300ms ease, width 300ms ease;
+    background-color: white;
+    height: 100%;
+    width: 149px;
+
+    .divider{
+      height: 60px;
+      border-left: 2px solid #F3D145;
+      display: inline-block;
+
+    }
+
+    #company-name{
+      color: #375238;
+      font: normal normal bold 20px/20px acumin-pro;
+      transform: rotate(180deg);
+      writing-mode: vertical-rl;
+      display: inline-table;
+      span{
+        &:first-child{
+          color: #375238;
+        }
+        &:last-child{
+          color: #F1D145;
+        }
+      }
+    }
+
+    #hamburgerContainer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width:50PX ;
+      height: 50px;
       cursor: pointer;
+
       &:hover{
-        width:50PX ;
-        height: 50px;
+        > img {
+          width:50PX ;
+          height: 50px;
+        }
+
+      }
+
+      > img {
+        width: 45px;
+        height: 45px;
+        transition: height 300ms ease, width 300ms ease;
+
+
       }
     }
   }
 
+  #expansion {
+    height: 100vh;
+    background-color: white;
+    width: calc(100vw - 149px);
+    transition: width 1s ease, 2s background-position 1s ease;
+    background-image: url(../../../assets/tomatoes.png) ;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: calc(75vw - 149px) center;
 
+
+    &.expend {
+      width: 0;
+      overflow: hidden;
+      transition: 2s width 3s ease, 2s background-position 1s ease;
+      background-position: calc(100vw - 149px) center;
+    }
+  }
 
 }
 
