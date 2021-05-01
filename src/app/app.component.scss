@@ -1,0 +1,19 @@
+:host {
+  section {
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url(../assets/pineapple-supply-co-prP9CYcRpzA-unsplash.png);
+    background-position: center center;
+  }
+
+  app-menu {
+    position: fixed;
+    height: 100vh;
+    width: 149px;
+  }
+  app-header{
+    position: fixed;
+    width: calc(100VH - 149px);
+    margin-left: 149px;
+  }
+}

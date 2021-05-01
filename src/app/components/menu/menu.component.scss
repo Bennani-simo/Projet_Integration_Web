@@ -1,0 +1,57 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+
+  .divider{
+    height: 60px;
+    border-left: 2px solid #F3D145;
+    display: inline-block;
+
+  }
+
+  #company-name{
+    color: #375238;
+    font: normal normal bold 20px/20px acumin-pro;
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    display: inline-table;
+    span{
+      &:first-child{
+        color: #375238;
+      }
+      &:last-child{
+        color: #F1D145;
+      }
+    }
+  }
+
+  #hamburgerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50PX ;
+    height: 50px;
+    img {
+      width: 45px;
+      height: 45px;
+      transition: height 300ms ease, width 300ms ease;
+      cursor: pointer;
+      &:hover{
+        width:50PX ;
+        height: 50px;
+      }
+    }
+  }
+
+
+
+}
+
+
+
+
+
+
