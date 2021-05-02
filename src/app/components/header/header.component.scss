@@ -23,6 +23,12 @@
         margin-right: 10px;
       }
     }
+    & :hover {
+      // background-color: red;
+      // border-top: 3px solid red;
+      color :#F3D145;
+
+    }
 
     .second{
       margin-top: 70px;
@@ -41,9 +47,11 @@
           margin-left: 55px;
           margin-right: 10px;
           align-items: center;
+
         }
       }
     }
+
 
     .SocialMedia {
       display: flex;
@@ -125,6 +133,64 @@
 
 
     }
+    .footer {
+      display: flex;
+      flex-direction: right;
+      justify-content: space-between;
+      .fleft {
+        margin-left: 70px;
+        .fbig {
+          text-align: left;
+          font: normal normal bold 98px/16px Acumin Pro;
+          letter-spacing: 7.35px;
+          color: #F1D145;
+        }
+        .fsmall{
+          text-align: left;
+          font: normal normal bold 29px/16px Acumin Pro;
+          letter-spacing: 2.17px;
+          color: #F1D145;
+
+        }
+        .fsmally {
+          text-align: right;
+          font: normal normal bold 29px/16px Acumin Pro;
+          letter-spacing: 2.17px;
+          color: #375238;
+          margin-left: 15px;
+        }
+      }
+      .fright {
+        display: flex;
+        flex-direction: right;
+        padding-right: 60px ;
+        margin-bottom: 200px;
+        .fimage {
+          width: 161px;
+          height: 107px;
+
+        }
+        .fimage2 {
+          width: 116px;
+          height: 107px;
+          background-color: #F1D145;
+          text-align: center ;
+          cursor: pointer;
+          background: linear-gradient(to left, #F3D145 50%, #375238 50%) right;
+          background-size: 200%;
+          transition: 0s;
+          line-height: 107px;
+          color: white;
+          &:hover {
+            background-position: left;
+            transition: 0.6s ease-out;
+          }
+
+        }
+
+      }
+    }
+
   }
 
 
