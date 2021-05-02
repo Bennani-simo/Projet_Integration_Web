@@ -63,20 +63,59 @@
     height: 100vh;
     background-color: white;
     width: calc(100vw - 149px);
-    transition: width 1s ease, 2s background-position 1s ease;
+    transition: width 1s ease, 1s background-position 1s ease;
     background-image: url(../../../assets/tomatoes.png) ;
     background-size: 500px;
     background-repeat: no-repeat;
-    background-position: calc(75vw - 149px) center;
+    background-position: calc(100vw - 149px - (500px)) center;
 
 
     &.expend {
       width: 0;
       overflow: hidden;
-      transition: 2s width 3s ease, 2s background-position 1s ease;
+      transition: 2s width 2s ease, 1s background-position 1s ease;
       background-position: calc(100vw - 149px) center;
     }
-  }
+
+    .first {
+      font: normal normal bold 24px/29px Acumin Pro;
+      letter-spacing: 1.8px;
+      color: #3B573B;
+      opacity: 1;
+      margin-top: 75px;
+      .divider2{
+        width: 60px;
+        border-top: 3px solid #F3D145;
+        display: inline-block;
+        margin-left: 55px;
+        margin-right: 10px;
+      }
+    }
+
+      .second{
+        margin-top: 70px;
+        .third {
+          margin-bottom: 39px;
+          text-align: left;
+          font: normal normal bold 12px/14px Acumin Pro;
+          letter-spacing: 0.9px;
+          color: #375238;
+          opacity: 1;
+          .divider3 {
+            width: 30px;
+            border-top: 3px solid #F3D145;
+            display: inline-block;
+            margin-left: 55px;
+            margin-right: 10px;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+
+
+
 
 }
 

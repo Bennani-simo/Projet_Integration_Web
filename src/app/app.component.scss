@@ -1,10 +1,11 @@
 :host {
   section {
-    min-height: 100vh;
+    height: 100vh;
     width: 100vw;
-    background-image: url(../assets/pineapple-supply-co-prP9CYcRpzA-unsplash.png);
-    background-position: center center;
-  }
+    //background-image: url(../assets/pineapple-supply-co-prP9CYcRpzA-unsplash.png);
+    // background-position: center center;
+    // background-size: 100%;
+    // background-repeat: no-repeat;
 
   app-menu {
     position: fixed;
@@ -13,7 +14,32 @@
   }
   app-header{
     position: fixed;
-    width: calc(100VH - 149px);
+    width: calc(100vw - 149px);
+    height: 100vh;
     margin-left: 149px;
+    background-image: url(../assets/pineapple-supply-co-prP9CYcRpzA-unsplash.png);
+    // background-position: 25% 75%;
+    background-position:  bottom 0px left 0px;
+    background-size: 100%;
+
+    background-repeat: no-repeat;
   }
+
+
+
+
+
+
+
+
+
+
+  app-content{
+    position: fixed;
+    width: calc(100vw - 149px);
+    height: calc(100vh - 235px);
+    margin-left: 149px;
+    margin-top: 255px;
+  }
+}
 }

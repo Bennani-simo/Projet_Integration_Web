@@ -1,0 +1,121 @@
+:host{
+  display: flex;
+  flex-direction: column;
+
+
+
+  #header {
+    display: flex;
+    flex-direction: right;
+    justify-content: space-between;
+    width: 100%;
+    .first {
+      font: normal normal bold 24px/29px Acumin Pro;
+      letter-spacing: 1.8px;
+      color: #3B573B;
+      opacity: 1;
+      margin-top: 75px;
+      .divider2{
+        width: 60px;
+        border-top: 3px solid #F3D145;
+        display: inline-block;
+        margin-left: 55px;
+        margin-right: 10px;
+      }
+    }
+
+    .second{
+      margin-top: 70px;
+      .third {
+        margin-bottom: 39px;
+        text-align: left;
+        font: normal normal bold 12px/14px Acumin Pro;
+        letter-spacing: 0.9px;
+        color: #375238;
+        opacity: 1;
+
+        .divider3 {
+          width: 30px;
+          border-top: 3px solid #F3D145;
+          display: inline-block;
+          margin-left: 55px;
+          margin-right: 10px;
+          align-items: center;
+        }
+      }
+    }
+
+    .SocialMedia {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 67px;
+      padding-right: 60px;
+      height: 145px;
+    }
+  }
+
+  #content {
+
+    .screen1 {
+
+      .milieu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // margin: auto ;
+        margin-left: 30%;
+        margin-right: 400px;
+        .titre {
+
+          text-align: left;
+
+          font: normal normal 900 140px/120px Acumin Pro;
+          letter-spacing: 5.5px;
+          color: #FBD848;
+
+          opacity: 0.6;
+        }
+        .description {
+
+          background: #FFFFFF ;
+          opacity: 0.39;
+           p {
+            text-align: left;
+            font: normal normal bold 12px/14px Acumin Pro;
+            letter-spacing: 0.9px;
+            color: #375238;
+            opacity: 1;
+            margin-left: 39px;
+
+            padding-top: 20px;
+            margin-bottom: 20px;
+           }
+
+        }
+        #discover {
+          margin-top: 40px;
+          width: 200px;
+          height: 38px;
+          background: #F1D145 ;
+          text-transform: uppercase;
+          color: white;
+          line-height: 38px;
+          text-align: center;
+          letter-spacing: 0.9px;
+          font-size: 12px;
+          cursor: help;
+
+
+        }
+
+      }
+
+
+
+    }
+  }
+
+
+}
+
