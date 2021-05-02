@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter,Output } from '@angular/core';
+
 
 @Component({
   selector: 'app-menu',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-
+  @Output() expendedMenuEvent = new EventEmitter<boolean>();
   isMenu = true;
 
   constructor() { }
@@ -16,7 +17,10 @@ export class MenuComponent implements OnInit {
   }
 
   toogleMenu() {
-    this.isMenu = !this.isMenu
+    this.isMenu = !this.isMenu;
+    this.expendedMenuEvent.emit(this.isMenu);
   }
+
+
 
 }

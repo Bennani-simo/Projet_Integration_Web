@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'int-web';
+  isMenu = true;
+
+
+  toogleMenu() {
+    this.isMenu = !this.isMenu
+  }
+  onExpandMenu(value) {
+    this.toogleMenu()
+  }
 }
